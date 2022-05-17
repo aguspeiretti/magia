@@ -1,6 +1,8 @@
 Swal.fire({
   title: "Bienvenido",
-  text: "Estas listo?",
-  icon: "success",
-  confirmButtonText: "vamos",
+  text: "Estas Preparado?",
+  icon: "error",
+  confirmButtonText: "Adelante",
+  background: "#000",
+  grow: "fullscreen",
 });

@@ -79,7 +79,7 @@ function generarNumero() {
 
   let aleatorio = inicio + Math.floor(Math.random() * fin);
 
-  alert("tu numero de la suerte es: " + aleatorio);
+  Swal.fire("tu numero de la suerte es: " + aleatorio);
 }
 
 function revelarCartas() {
