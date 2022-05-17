@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-image: url(./maxresdefault.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+}
+main {
+  width: 100%;
+  height: 100vh;
+
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container1,
+.container2 {
+  width: 100%;
+  height: 100vh;
+
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container2 .contenido {
+  width: 450px;
+  height: 450px;
+  background-color: rgba(2, 2, 2, 0.966);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+.container1 .contenido {
+  width: 450px;
+  height: 450px;
+  background-color: rgba(2, 2, 2, 0.966);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.container .contenido {
+  width: 450px;
+  height: 450px;
+  background-color: rgba(2, 2, 2, 0.966);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.contenido input {
+  width: 70%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+.contenido h1 {
+  font-size: 40px;
+}
+
+.contenido .btn {
+  width: 40%;
+  height: 30px;
+  border-radius: 15px;
+}
+.contenido .btn1 {
+  width: 40%;
+  height: 30px;
+  border-radius: 15px;
+}
+.contenido .btn2 {
+  width: 40%;
+  height: 30px;
+  border-radius: 15px;
+  margin-bottom: 50px;
+}
+.elige {
+  margin-bottom: 290px;
+}
+.cartas {
+  width: 300px;
+  position: absolute;
+  margin-top: 80px;
+}
+.cartas1 {
+  width: 300px;
+  position: absolute;
+  margin-top: 80px;
+  display: none;
+}
+.flecha {
+  color: white;
+  font-size: 30px;
+}
+.btn3 {
+  position: absolute;
+  margin-top: 420px;
+  border-radius: 5px;
+}
+
+/* nav bar */
+
+.nav-container {
+  background-color: black;
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0;
+  z-index: 100;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  margin: 0 auto;
+}
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+  transform: rotate(2deg);
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 1));
+}
+.nav-toggle {
+  color: rgb(248, 248, 248);
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  display: none;
+  cursor: pointer;
+  z-index: 100;
+}
+.nav-menu {
+  display: flex;
+  list-style: none;
+}
+.registro-toggle {
+  display: none;
+}
+.nav-menu-item {
+  font-size: 18px;
+  margin: 0 10px;
+  line-height: 80px;
+}
+.nav-menu-link {
+  padding: 8px 22px;
+  font-size: 25px;
+  text-shadow: 1px 1px#121a2d;
+  transition: 0.5s;
+}
+.nav-menu-link:hover {
+  color: #4af89b;
+}
+.nav-link {
+  font-family: sans-serif;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.nav-link:before,
+.nav-link:after {
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  border: 4px solid #0277bd;
+  transform: translateX(-50%) translateY(-50%) scale(0.8);
+  border-radius: 50%;
+  background: transparent;
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
+  z-index: -1;
+}
+@media (max-width: 768px) {
+  .nav-container {
+    height: 60px;
+  }
+  .logo {
+    padding-left: 00px;
+    padding-top: 0px;
+  }
+  .nav-toggle {
+    color: rgb(255, 255, 255);
+    display: block;
+    margin-left: 40px;
+    font-family: "Poppins", sans-serif;
+  }
+  .nav-menu {
+    flex-direction: column;
+    margin-right: 80px;
+    background-color: #000000;
+    position: fixed;
+    left: 100%;
+    transition: 0.3s;
+    top: 60px;
+    width: 100%;
+    align-items: center;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+  }
+  .registro-toggle {
+    display: block;
+    margin-left: 70px;
+  }
+  .l1t {
+    margin-top: 30px;
+  }
+  .l2t {
+    margin-top: 40px;
+  }
+  .nav-menu-item {
+    line-height: 70px;
+  }
+  .nav-menu-visible {
+    left: 0;
+  }
+  .registro {
+    display: none;
+  }
+}

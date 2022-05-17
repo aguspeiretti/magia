@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilo.css" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script
+      src="https://kit.fontawesome.com/8bac4a8dea.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Horoscopo</title>
+  </head>
+
+  <body>
+    <header class="headerPrincipal">
+      <div class="nav-container">
+        <nav class="nav">
+          <div class="logo">
+            <a href="./index.html"
+              ><img class="logo" src="./p1.png" alt="logo"
+            /></a>
+          </div>
+
+          <button class="nav-toggle"><i class="fa-solid fa-bars"></i></button>
+
+          <ul class="nav-menu">
+            <li class="nav-menu-item">
+              <a href="#c" class="nav-menu-link nav-link">Horoscopo</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="#c1" class="nav-menu-link nav-link">Tu Numero</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="#c2" class="nav-menu-link nav-link">Magia</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container" id="c">
+        <div class="contenido">
+          <h1>Conoce tu destino!</h1>
+          <h4>Ingresa tu signo zodiacal.</h4>
+          <input
+            class="input"
+            id="signo"
+            type="text"
+            placeholder="  Ingresa tu signo"
+          />
+          <button class="btn" onclick="extraerDato()">Revelar!</button>
+        </div>
+      </div>
+      <div class="container1" id="c1">
+        <div class="contenido">
+          <h1>Tu numero de la suerte!!</h1>
+          <h4>tu numero de la semana es:</h4>
+          <input
+            class="input"
+            id="signo"
+            type="text"
+            placeholder="  ingresa tu fecha de nacimiento"
+          />
+          <button class="btn1" onclick="generarNumero()">Revelar!</button>
+        </div>
+      </div>
+      <div class="container2" id="c2">
+        <div class="contenido">
+          <h1>Magia!!</h1>
+
+          <img id="cartasPrincipales" class="cartas" src="./elige.gif" alt="" />
+          <img
+            id="cartasNuevas"
+            class="cartas1"
+            src="./desaparecio.gif"
+            alt=""
+          />
+          <button class="btn2" onclick="revelarCartas()">Ya esta!</button>
+          <button class="btn3" onclick="atras()">Otra vez!</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap");
+    </style>
+  </body>
+</html>
